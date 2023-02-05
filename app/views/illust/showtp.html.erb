@@ -1,0 +1,11 @@
+<div class="illust-show-wrapper">
+  <div class="container">
+    <div class="illust-show">
+      <h2><%= @illust.title %></h2>
+      <img src=<%= "/illusts/#{@illust.transparent}" %> >
+      <div class="transparent-btn">
+        <%= link_to("戻る", "/illust/show/#{@illust.id}") %>
+      </div>
+    </div>
+  </div>
+</div>

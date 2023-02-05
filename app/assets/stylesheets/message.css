@@ -1,0 +1,114 @@
+/*ingex-----------------------------------------------------------------------*/
+.message-wrapper{
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;  
+}
+.message-btn a{
+  color: white;
+  font-weight: bold;
+  margin: 30px;
+  padding: 10px 20px;
+  background-color: rgb(236, 146, 164);
+  border-radius: 5px;
+  display:inline-block;
+}
+.message-btn :hover{
+  background-color: rgb(233, 123, 145);
+}
+.messages{
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.message-card{
+  background-color: rgb(236, 146, 164);
+  width: 350px;
+  height: 170px;
+  margin: 10px;
+  padding: 10px; 
+}
+.message-content{
+  border-radius: 10px;
+  background-color: white;
+  width: 350px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*show---------------------------------------------------------------------------*/
+.message-show-wrapper{
+  padding-top: 100px;
+  text-align: center;
+}
+.message-show-card{
+  font-size: 1.5rem;
+  width: 560px;
+  height: auto;
+  padding: 20px;
+  margin: 50px auto;
+  background-color: rgb(236, 146, 164);
+}
+.message-show{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.answer-show-card{
+  font-size: 1.5rem;
+  width: 560px;
+  height: auto;
+  padding: 20px;
+  margin: 10px auto;
+  background-color: rgb(146, 200, 236);
+}
+.answer-show{
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*new----------------------------------------------------------------------------*/
+.message-new-wrapper{
+  padding-top: 50px;
+  text-align:center;
+}
+.message-new{
+  padding-top: 50px;
+}
+.message-new p{
+  padding-top: 12px;
+}
+.message-name{
+  border: solid 2px rgb(160, 160, 200);
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+  width: 20rem;
+  line-height: 1.7;
+  text-align: center;
+}
+.message-name:focus{
+  background-color: rgb(220, 230, 250);
+}
+.message-new textarea{
+  border: solid 2px rgb(160, 160, 200);
+  border-radius: 5px;
+  background-color: rgb(240, 240, 240);
+  width: 20rem;
+  height: 10rem; 
+  line-height: 1.7;
+  text-align: center;
+}
+.messade-new textarea:focus{
+  background-color: rgb(220, 230, 250);
+}
+.submit-btn{
+  display: inline-block;
+}

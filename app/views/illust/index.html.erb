@@ -1,0 +1,24 @@
+
+<div class="illusts-wrapper" >
+  <div class="container">
+    <h1>イラスト一覧</h1>
+    <div class="main-text">クリックして差分を表示</div>
+    <div class="illusts">
+      <% @illusts.each do |illust| %>
+        <div class="illust">
+          <div class="illust-thumb">
+            <%= link_to image_tag("/illusts/#{illust.name}", class:"image"), "/illust/show/#{illust.id}" %>
+          </div>
+          <div class="illust-title">
+            <%= illust.title %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="edit-link">
+      <% if session[:editor_id] %>
+        <%= link_to("編集用リンク", "/illust/new") %>
+      <% end %>
+    </div>
+  </div>
+</div>

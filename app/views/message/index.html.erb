@@ -1,0 +1,24 @@
+<div class="message-wrapper">
+  <div class="container">
+    <h1>メッセージBOX</h1>
+    <div class='message-btn'>
+      <%= link_to('メッセージを送る','/message/new') %>
+    </div>
+    <div class="main-text">回答はクリックして確認</div>
+    <div class="messages">
+      <% @messages.each do |message| %>
+        <div class="message-card">
+          <% if message.content.length > 80 %>
+            <div class="message-content">
+              <%= link_to( message.content.slice(0..80) + "...", "/message/show/#{message.id}") %>
+            </div>
+          <% else %>
+            <div class="message-content">
+              <%= link_to( message.content, "/message/show/#{message.id}" ) %>
+            </div>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

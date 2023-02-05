@@ -1,0 +1,18 @@
+<div class="illust-show-wrapper">
+  <div class="container">
+    <div class="illust-show">
+      <h2><%= @illust.title %></h2>
+      <img src=<%= "/illusts/#{@illust.name}" %> >
+      <% if @illust.transparent %>
+        <div class="transparent-btn">
+          <%= link_to("背景透過", "/illust/showtp/#{@illust.id}") %>
+          </div>
+      <% end %>
+    </div>
+    <div class="edit-link">
+      <% if session[:editor_id] %>
+        <%= link_to("編集","/illust/edit/#{@illust.id}" ) %>
+      <% end %>
+    </div>
+  </div>
+</div>

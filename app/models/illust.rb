@@ -1,0 +1,3 @@
+class Illust < ApplicationRecord
+  
+end

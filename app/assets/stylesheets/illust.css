@@ -1,0 +1,61 @@
+
+/* イラスト一覧--------------------------------------------------- */
+.illusts-wrapper{
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+.illusts{
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.illust{
+  width: 29%;
+  margin: 20px 1%;
+}
+.illust-thumb{
+  position: relative;
+  width: 100%;
+  padding-top: 120%;
+}
+
+.image{
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.edit-link{
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+/* 新規投稿ページ------------------------------------------------ */
+.illust-new{
+  width: 80%;
+  padding: 100px;
+}
+/*詳細ページ-------------------------------------------------*/
+.illust-show-wrapper{
+  margin-top: 50px;
+  text-align: center;
+}
+.illust-show img{
+  width: 600px;
+  border: solid 1px gray;
+}
+.transparent-btn a{
+  color: white;
+  font-weight: bold;
+  margin: 30px;
+  padding: 10px 20px;
+  background-color: rgb(236, 146, 164);
+  border-radius: 5px;
+  display:inline-block; 
+}

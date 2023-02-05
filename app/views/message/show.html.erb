@@ -1,0 +1,20 @@
+<div class="message-show-wrapper">
+  <div class="container">
+    <div class="message-show-card">
+      <div class="message-show">
+        <p><%= @message.content %></p>
+      </div>
+    </div>
+    <p>回答</p>
+    <div class="answer-show-card">
+      <div class="answer-show">
+        <p><%= @message.answer %></p>
+      </div>
+    </div>
+    <div class="edit-link">
+      <% if session[:editor_id] %>
+        <%= link_to("編集","/message/answer/#{@message.id}" ) %>
+      <% end %>
+    </div>
+  </div>
+</div>

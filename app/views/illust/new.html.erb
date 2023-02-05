@@ -1,0 +1,14 @@
+<div class="main illust-new">
+  <p>新規投稿</p>
+  <%= form_tag("/illust/create", method: :post,multipart: true) do %>
+    <p>タイトル</p>
+    <input type="text" name="title" >
+    <p>画像ネーム</p>
+    <input type="text" name="name" >
+    <p>モデル</p>
+    <input type="text" name="model"
+    <p>画像</p>
+    <input type="file" name="image" >
+    <input type="submit">
+  <% end %>
+</div>

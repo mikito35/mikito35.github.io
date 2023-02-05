@@ -1,0 +1,14 @@
+<div class='message-new-wrapper'>
+  <div class='container'>
+    <div class='message-new'>
+      <%= form_tag("/message/create", method: :post) do %>
+        <p>ニックネーム（任意）</p>
+        <input type='text' name='name' class='message-name' value='ひみつ'>
+        <p>メッセージ</p>
+        <textarea name='content'>質問やリクエストなど(200文字)</textarea>
+        <br>
+        <input type='submit' class='submit-btn' value='送る'>
+      <% end  %>
+    </div>
+  </div>
+</div>

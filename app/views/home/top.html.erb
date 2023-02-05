@@ -1,0 +1,46 @@
+<div class="main-top">
+  <div class="container">
+    <h1 class='top-name'>みきと</h1>
+    <p class='top-profire'>illustration & vlog</p>
+    <!-- twitterリンクを追加 -->
+    <div class="twitter btn">
+      <%= link_to("twitter","https://twitter.com/mikito_hmus") %>
+    </div>
+  </div>
+  <div class="main-thumb">
+    <div class="container">
+      <% @illusts.each_with_index do |illust,i| %>
+        <div class="thumb">
+          <img src="<%= "/illusts/#{illust.name}" %>">
+        </div>
+        <% break if i==3 %>
+      <% end %>
+    </div>
+  </div>
+  <div class="main-text">
+    <div class="container">
+      <p>主にVtuberやアニメのファンアートを描いています。</p>
+      <h4>イラスト一覧</h4>
+      <p>透過画像や差分をまとめて見れるように更新していきます。</p>
+      <h4>メッセージBOX</h4>
+      <p>マシュマロ感覚で感想、雑談を送ってください。<br>リクエスト等を頂くとお題に困ったときの参考にさせていただきます。</p>
+    </div>
+  </div>
+  <footer>
+  <div class="container">
+    <span id="back">
+      <a href="" class="scroll-btn">ページトップへ</a>
+    </span>
+    <div class="login">
+      <% if session[:editor_id] %>
+        <%= form_tag("/editor/logout", method: :post) do %>
+          <input type="submit" value="ログアウト">
+        <% end %>
+      <% else %>
+        <a href="editor/login_form">編集用ログイン</a>
+      <% end %>
+    </div>
+  </div>
+</footer>
+
+</div>

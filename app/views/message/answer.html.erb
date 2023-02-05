@@ -1,0 +1,20 @@
+<div class='message-new-wrapper'>
+  <div class='container'>
+    <div class='message-new'>
+      <%= form_tag("/message/update/#{@message.id}", method: :post) do %>
+        <p>ニックネーム:<%= @message.name %></p>
+        <p>メッセージ</p>
+        <p><%= @message.content %></p>
+        <p>回答</p>
+        <textarea name='answer'></textarea>
+        <br>
+        <input type='submit' class='submit-btn' value='送る'>
+      <% end  %>
+      <div class="destroy-btn">
+        <%= form_tag("/message/del/#{@message.id}", method: :post) do %>
+          <input type="submit" value="削除">
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
